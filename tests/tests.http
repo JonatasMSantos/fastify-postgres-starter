@@ -1,0 +1,30 @@
+POST http://localhost:3000/schedules
+content-type: application/json; charset=utf-8
+
+{
+  "title": "Dipirona",
+  "description": "Tomar remédio às 14:00",
+  "time": "2023-09-19 14:00:00"
+}
+
+###
+GET http://localhost:3000/schedules
+
+
+###
+GET http://localhost:3000/schedules?search=Dipirona
+
+
+###
+PUT http://localhost:3000/schedules/6
+content-type: application/json; charset=utf-8
+
+{
+  "title": "Dorflex",
+  "description": "Tomar remédio às 21:00",
+  "time": "2023-09-19 21:00:00"
+}
+
+###
+DELETE http://localhost:3000/schedules/1
+content-type: application/json; charset=utf-8
